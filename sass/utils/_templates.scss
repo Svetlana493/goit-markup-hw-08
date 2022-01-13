@@ -1,8 +1,10 @@
 .container {
-    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
 }
 
 .button {
@@ -88,5 +90,11 @@
     }
     &--portfolio {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section--hide {
+        display: none;
     }
 }
