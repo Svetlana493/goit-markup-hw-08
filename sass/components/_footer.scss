@@ -1,0 +1,7 @@
+.footer {
+    background-color: $secondary-bg-color;
+    & .container {
+        display: flex;
+        justify-content: center;
+    }
+}
