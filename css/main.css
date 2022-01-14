@@ -66,6 +66,9 @@ ul {
 }
 
 .button-1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     text-align: center;
     color: #ffffff;
     background-color: #2196f3;
@@ -1067,6 +1070,21 @@ ul {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.agree {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-field__icon {
+    width: 12px;
+    height: 12px;
+}
+
+.checkbox {
+    margin-right: 8px;
 }
 
 .icon-check-mark {
