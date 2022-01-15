@@ -99,23 +99,23 @@ ul {
 }
 
 .logo {
-    color: #000;
+    color: #000000;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .section {
     margin: auto;
     color: var(--primary-text-color);
     line-height: 1.71;
-    margin-bottom: 94px
+    margin-bottom: 94px;
 }
 
 .section--accent {
-    background-color: #f5f4fa
+    background-color: #f5f4fa;
 }
 
 .section__title {
@@ -124,19 +124,19 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 .section__title--hide {
-    display: none
+    display: none;
 }
 
 .section__title--team {
-    padding-top: 94px
+    padding-top: 94px;
 }
 
 .section--portfolio {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 480px) {
