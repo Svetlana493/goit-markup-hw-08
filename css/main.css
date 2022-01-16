@@ -150,6 +150,18 @@ ul {
     border-bottom: 1px solid #ececec;
 }
 
+.header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
 .logo__accent {
     color: #2196f3;
 }
@@ -171,22 +183,22 @@ ul {
     color: #212121;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+    letter-spacing: .02em;
+    text-decoration: none
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus {
-    color: #2196f3;
+    color: #2196f3
 }
 
 .site-nav__link--current {
-    color: #2196f3;
+    color: #2196f3
 }
 
 @media screen and (max-width: 480px) {
     .site-nav {
-        display: none;
+        display: none
     }
 }
 
@@ -194,26 +206,26 @@ ul {
     color: #757575;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
     text-decoration: none;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact-nav__link:hover,
 .contact-nav__link:focus {
-    color: #2196f3;
+    color: #2196f3
 }
 
 .contact-nav__link:hover .contact-nav__icon--mail,
 .contact-nav__link:focus .contact-nav__icon--mail {
-    fill: #2196f3;
+    fill: #2196f3
 }
 
 .contact-nav__link:hover .contact-nav__icon--tel,
 .contact-nav__link:focus .contact-nav__icon--tel {
-    fill: #2196f3;
+    fill: #2196f3
 }
 
 .contact-nav__icon {
@@ -221,22 +233,22 @@ ul {
     fill: #757575;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact-nav__icon--mail {
     width: 16px;
-    height: 12px;
+    height: 12px
 }
 
 .contact-nav__icon--tel {
     width: 10px;
-    height: 16px;
+    height: 16px
 }
 
 @media screen and (max-width: 480px) {
     .contact-nav__link {
-        display: none;
+        display: none
     }
 }
 
@@ -265,11 +277,19 @@ ul {
 }
 
 .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc((100% - 90px) / 4);
     color: #757575;
 }
 
 .features__item {
-    min-width: 450px;
+    min-width: 270px;
+}
+
+.features__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features__title {
@@ -282,8 +302,10 @@ ul {
 }
 
 .features__wrap {
-    display: block;
-    width: 450px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 270px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -292,7 +314,7 @@ ul {
 .features__icon {
     width: 70px;
     height: 70px;
-    margin: 25px 190px;
+    margin: 25px 100px;
 }
 
 .our-work {
@@ -331,6 +353,10 @@ ul {
 }
 
 .our-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 94px;
     color: #757575;
     font-size: 16px;
     line-height: 19px;
@@ -341,7 +367,10 @@ ul {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 30px;
+}
+
+.our-team__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .workers__title {
@@ -415,6 +444,19 @@ ul {
 
 .colladge__item:not(:last-child) {
     margin-right: 10px;
+}
+
+.client-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.client-list__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .client-list__link {
@@ -1033,8 +1075,8 @@ ul {
     top: 0;
     left: 0;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     margin-top: 29px;
     margin-left: 12px;
     fill: #000000;
@@ -1114,14 +1156,56 @@ ul {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.agree {
-    margin-left: 10px;
+.icon-check-mark {
+    margin-left: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 30px
+}
+
+.icon-check-mark__text {
+    line-height: 1.71;
+    color: #757575
+}
+
+.icon-check-mark__icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    cursor: pointer
+}
+
+.icon-check-mark__icon+.icon-check-mark__text {
+    margin-left: 7px
+}
+
+.icon-check-mark__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.icon-check-mark__input:checked+.icon-check-mark__icon {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    background-image: url("../images/check.svg#check-icon");
+    background-size: contain;
+    background-origin: border-box
+}
+
+.icon-check-mark__link {
+    color: #2196f3
 }
 
 .form__button {
@@ -1139,78 +1223,14 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__button-1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.form__button-1:hover,
-.form__button-1:focus {
-    color: #ffffff;
-    background-color: #188ce8;
-    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-check-mark {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.icon-check-mark__text {
-    margin-left: 8px;
-    line-height: 1.71;
-    color: #757575;
-}
-
-.icon-check-mark__icon {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.icon-check-mark__icon+.agree__text {
-    margin-left: 7px;
-}
-
-.icon-check-mark__input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.icon-check-mark__input:checked+.icon-check-mark {
-    border-color: #2196f3;
-    background-color: #2196f3;
-    background-image: url("../images/check.svg#icon-check-mark");
-    background-size: contain;
-    background-origin: border-box;
-}
-
-.icon-check-mark__link {
-    color: #2196f3;
-}
-
 .checkbox {
-    margin-left: -30px;
+    margin-left: -10px;
+}
+
+.agree {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 
