@@ -83,7 +83,7 @@ header {
 
 .site-nav {
     display: flex;
-    padding-left: 0;
+    padding-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
