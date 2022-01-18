@@ -1,7 +1,12 @@
 .features {
+    display: flex;
+    width: calc((100% - 90px) / 4);
     color: $primary-text-color;
     &__item {
-        min-width: 450px;
+        min-width: 270px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
     &__title {
         color: $title-text-color;
@@ -12,8 +17,8 @@
         margin-bottom: 10px;
     }
     &__wrap {
-        display: block;
-        width: 450px;
+        display: inline-flex;
+        width: 270px;
         background: $primary-button-bg-color;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -21,6 +26,6 @@
     &__icon {
         width: 70px;
         height: 70px;
-        margin: 25px 190px;
+        margin: 25px 100px;
     }
 }

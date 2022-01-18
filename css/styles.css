@@ -92,6 +92,7 @@ header {
 
 .site-nav .item {
     position: relative;
+    margin-left: 10px;
 }
 
 .site-nav .link {
