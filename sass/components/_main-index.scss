@@ -1,0 +1,326 @@
+/* Герой */
+
+.hero {
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    background-color: $hero-bg-color;
+    // max-width: 1600px;
+    // margin: auto;
+    @media screen and (max-width: 767px) {
+        background-image: url(../images/hero.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/hero.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+    @media screen and (max-width: 1199px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    &__container {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        color: $primary-white-color;
+        text-transform: uppercase;
+        @media screen and (max-width: 1199px) {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            letter-spacing: 0.06em;
+        }
+        @media screen and (min-width: 1200px) {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+    }
+    .hero__btn {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        border-radius: 4px;
+        padding: 10px 32px;
+        display: block;
+        margin: 30px auto 0 auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: $primary-white-color;
+        background-color: $accent-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        &:hover,
+        &:focus {
+            background-color: $button-bg-hover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+    }
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .hero {
+            background-image: url(../images/hero.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .hero {
+                background-image: url(../images/hero.jpg), linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+            }
+        }
+    }
+    /* Наши преимущества */
+    .skills {
+        padding-bottom: 0;
+    }
+    .skills__hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+    }
+    .skills-list__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 120px;
+        background-color: $primary-bg-color;
+        border-radius: 4px;
+    }
+    .skills-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills-list__item {
+        max-width: 270px;
+    }
+    .skills-list__item:not(:last-child) {
+        margin-left: 30;
+    }
+    .skills-list__title {
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+        padding-bottom: 10px;
+    }
+    .skills-list__details {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+    }
+    /* Чем мы занимаемся */
+    /* Наша команда */
+    .solutions__title {
+        margin-bottom: 50px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        color: $title-text-color;
+    }
+    .card-set {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-set__thumb {
+        position: relative;
+    }
+    .wrap {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+    }
+    .wrap__text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.17;
+        color: $primary-white-color;
+        text-transform: uppercase;
+    }
+    .section-team {
+        background-color: $primary-bg-color;
+    }
+    .section-team__title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+        text-align: center;
+    }
+    .team-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .team-list__thumb {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: $primary-white-color;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    .team-list__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+    }
+    .team-list__position {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+    }
+    .social-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .social-links:not(:last-child) {
+        margin-right: 10px;
+    }
+    .social-links__link {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border-color: $primary-white-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .social-links__link:hover,
+    .social-links__link:focus {
+        background-color: $accent-color;
+    }
+    .social-links__link:hover .social-links__icon {
+        fill: $primary-white-color;
+    }
+    .social-links__icon {
+        width: 20px;
+        height: 20px;
+        fill: $icon-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* Постоянные клиенты */
+    .clients__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        color: $title-text-color;
+    }
+    .clients-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .client-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid $icon-color;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .client-logo__icon {
+        fill: $icon-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .client-logo:hover,
+    .client-logo:focus {
+        border-color: $accent-color;
+    }
+    .client-logo__icon:hover,
+    .client-logo__icon:focus {
+        fill: $accent-color;
+    }
+    .client-logo:hover .client-logo__icon,
+    .client-logo:focus .client-logo__icon {
+        fill: $accent-color;
+    }
+}
