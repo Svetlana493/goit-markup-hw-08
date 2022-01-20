@@ -1564,7 +1564,7 @@ footer .container {
     appearance: none;
 }
 
-.icon-check-mark__input:checked+.icon-check-mark {
+.icon-check-mark:checked+.icon-check-mark {
     border-color: #2196f3;
     background-color: #2196f3;
     background-image: url("../images/check.svg#icon-check-mark");
