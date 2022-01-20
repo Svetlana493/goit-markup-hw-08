@@ -1,0 +1,28 @@
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+    &__link {
+        display: flex;
+        margin-left: 50px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: $title-text-color;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+        &--current {
+            color: $accent-color;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav {
+        display: none;
+    }
+}

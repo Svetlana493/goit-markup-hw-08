@@ -1,0 +1,12 @@
+.form__button-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    &:hover,
+    &:focus {
+        color: $primary-white-color;
+        background-color: #188ce8;
+        transition: background-color $animation-style;
+    }
+}
